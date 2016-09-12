@@ -25,40 +25,15 @@ img {
     position: relative;
     box-shadow: 6px 3px 24px -4px rgba(0,0,0,0.75);
 }
-
-body > div {
-    margin: 10px auto;
-    width: 800px;
+.container {
+    width: 100%;
 }
 
 h6 {
     text-decoration: underline;
 }
 
-li {
-    float: left;
-    margin: 0 10px 10px 0;
-}
+@import "../components/nav/nav";
 
-#list img {
-    width: 140px;
-    height: 201px;
-}
 
-#detail {
-    width: 400px;
-    margin: 60px auto;
-}
-
-#detail img {
-    width: 260px;
-    height: 382px;
-}
-
-#detail a {
-    display: block;
-    text-align: center;
-    font-size: 140%;
-    color: #fff;
-}
 

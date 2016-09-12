@@ -19,17 +19,15 @@ import React from 'react';
 import { Router, Route, IndexRoute, Redirect, browserHistory } from 'react-router';
 
 import Layout from './views/layout.jsx';
-import ListPage from './views/list.jsx';
+import IndexPage from './views/index/index.jsx';
 import DetailPage from './views/detail.jsx';
 import Error404 from './views/404.jsx';
-import Dandan from './views/dandan.jsx';
 
 module.exports = (
   <Router history={browserHistory}>
     <Route path='/' component={Layout}>
-      <IndexRoute component={ListPage} />
+      <IndexRoute component={IndexPage} />
       <Route path='/movie/:id' component={DetailPage} />
-      <Route path='/dandan' component={Dandan} />
       <Redirect from='/gohome' to='/' />
       <Route path='*' component={Error404} />
     </Route>
